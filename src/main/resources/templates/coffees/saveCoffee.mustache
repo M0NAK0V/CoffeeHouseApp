@@ -1,0 +1,38 @@
+{{>layout/header}}
+{{>layout/nav}}
+<div class="container">
+    <div class="col-md-12">
+        <h1>Регистрация кофе</h1>
+        <div class="col-md-4">
+            <form method="get">
+                <div class="form-group">
+                    <label for="coffee_name">Название кофе</label>
+                    <input type="text" class="form-control" id="coffee_name" placeholder="Пожалуйста, введите название кофе">
+                </div>
+                <div class="form-group">
+                    <label for="coffee_author">Производитель</label>
+                    <input type="text" class="form-control" id="coffee_author" placeholder="Пожалуйста, введите производителя">
+                </div>
+                <div class="form-group">
+                    <label for="coffee_publish">Точка продажи</label>
+                    <input type="text" class="form-control" id="coffee_publish" placeholder="Пожалуйста, введите точку продажи">
+                </div>
+                <div class="form-group">
+                    <label for="coffee_price">Цена</label>
+                    <input type="text" class="form-control" id="coffee_price" placeholder="Пожалуйста, введите цену">
+                </div>
+                <div class="form-group">
+                    <label for="coffee_count">Количество</label>
+                    <input type="text" class="form-control" id="coffee_count" placeholder="Пожалуйста, введите количество">
+                </div>
+                <div class="form-group">
+                    <label for="coffee_detail">Больше информации</label>
+                    <textarea class="form-control" id="coffee_detail" placeholder="Пожалуйста, введите ваши данные"></textarea>
+                </div>
+            </form>
+            <a href="/" role="button" class="btn btn-outline-danger">Отменить</a>
+            <button type="button" class="btn btn-outline-secondary" id="btn-coffeesSave">Сохранить</button>
+        </div>
+    </div>
+</div>
+{{>layout/footer}}
