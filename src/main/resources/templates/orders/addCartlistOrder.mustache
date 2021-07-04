@@ -10,11 +10,11 @@
             <div>
                 <table id="table" class="table table-bordered table-hover text-center">
                     <thead>
-                        <th>Название книги</th>
-                        <th>Автор</th>
+                        <th>Название кофе</th>
+                        <th>Производитель</th>
                         <th>Цена</th>
                         <th>Количество</th>
-                        <th>Итог</th>
+                        <th>Сумма</th>
                     </thead>
                     <tbody>
                         {{#coffeeInfo}}
@@ -76,7 +76,7 @@
             </table>
             <div class="row d-flex justify-content-between border-bottom">
                 <div class="ml-2">
-                    <span>Итог</span>
+                    <span>Итого</span>
                 </div>
                 <div class="mr-4">
                     <strong id="totalAmount">
@@ -88,7 +88,7 @@
                     <button class="btn btn-outline-secondary btn-block" id="btn-addCartlistOrder">Заказать</button>
                 </div>
                 <div class="col-md-6 p-1">
-                    <button class="btn btn-outline-secondary btn-block" onclick=backLocation()>Отменить заказ</button>
+                    <button class="btn btn-outline-secondary btn-block"  onclick="location.href='/users/cartlist'">Отменить заказ</button>
                 </div>
             </div>
         </div>
